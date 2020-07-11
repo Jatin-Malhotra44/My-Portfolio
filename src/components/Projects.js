@@ -1,11 +1,14 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React,{useEffect} from 'react'
 import { Box,Typography,Card,CardActionArea,CardActions,CardContent,CardMedia,Button } from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './style.css';
-import avatar from '../Assets/coffee-apple.jpg';
-
+import Project1 from '../Assets/Simple-portfolio.png';
+import Project2 from '../Assets/Insta-Clone.png';
+import Project3 from '../Assets/Blog.png';
+import Project4 from '../Assets/Portfolio.png';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
@@ -15,6 +18,12 @@ const useStyles = makeStyles({
     },
     boxcontainer:{
         margin:'10px auto',
+    },
+    demo:{
+        "&:hover":{
+            color:'tomato',
+            fontSize:'23px'
+        }
     }
   });
 const Projects = () => {
@@ -29,7 +38,7 @@ const Projects = () => {
                 <div data-aos='zoom-in' style={{width:'100%',margin:'50px auto 20px'}}>
                     <Typography variant='h4' className='separator'>Projects</Typography >
                 </div>
-                <p>By Using My Development Skills and Web Designing Skills, 
+                <p data-aos='fade-left' >By Using My Development Skills and Web Designing Skills, 
                     I Have Worked On Various Projects based on Web Development , 
                     Both Backend and FrontEnd. I Have worked on Different Platforms , 
                     Python Based Django and JavaScript Based NodeJs for Backend and React
@@ -37,13 +46,14 @@ const Projects = () => {
             
                 <Box>
                     <div style={{display:'flex',justifyContent:'space-around',margin:'30px 0'}}>
+                        {/* Project 1 */}
                         <Card data-aos='zoom-in' className={classes.root}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
                                 alt="Contemplative Reptile"
                                 height="200"
-                                image={avatar}
+                                image={Project1}
                                 title="Contemplative Reptile"
                                 />
                                 <CardContent>
@@ -57,21 +67,24 @@ const Projects = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button style={{textDecorations:'none',color:'black'}} size="small" color="primary">
-                                Share
+                                
+                                <Button size="small" color="primary">
+                                <a href='https://site-port-a46e48.netlify.app' 
+                                    target='_blank'
+                                    style={{textDecoration:'none',color:'black',fontSize:'20px'}} >
+                                    Live Demo</a>
                                 </Button>
-                                <Button style={{textDecorations:'none',color:'black'}} size="small" color="primary">
-                                Learn More
-                                </Button>
+
                             </CardActions>
                         </Card>
+                        {/* Project2 */}
                         <Card data-aos='zoom-in' className={classes.root}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
                                 alt="Contemplative Reptile"
                                 height="200"
-                                image={avatar}
+                                image={Project2}
                                 title="Contemplative Reptile"
                                 />
                                 <CardContent>
@@ -85,23 +98,24 @@ const Projects = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button style={{textDecorations:'none',color:'black'}} size="small" color="primary">
-                                Share
-                                </Button>
-                                <Button style={{textDecorations:'none',color:'black'}} size="small" color="primary">
-                                Learn More
+                            <Button size="small" color="primary">
+                                <a href='https://insta-clone4444.herokuapp.com' 
+                                    target='_blank'
+                                    style={{textDecoration:'none',color:'black',fontSize:'20px'}} >
+                                    Live Demo</a>
                                 </Button>
                             </CardActions>
                         </Card>
                     </div>
                     <div style={{display:'flex',justifyContent:'space-around',margin:'20px 0'}}>
+                        {/* Project 3 */}
                         <Card data-aos='zoom-in' className={classes.root}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
                                 alt="Contemplative Reptile"
                                 height="200"
-                                image={avatar}
+                                image={Project3}
                                 title="Contemplative Reptile"
                                 />
                                 <CardContent>
@@ -115,11 +129,11 @@ const Projects = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button style={{textDecorations:'none',color:'black'}} size="small" color="primary">
-                                Share
-                                </Button>
-                                <Button style={{textDecorations:'none',color:'black'}} size="small" color="primary">
-                                Learn More
+                            <Button size="small" color="primary">
+                                <a href='https://site-port-a46e48.netlify.app' 
+                                    target='_blank'
+                                    style={{textDecoration:'none',color:'black',fontSize:'20px'}} >
+                                    Live Demo</a>
                                 </Button>
                             </CardActions>
                         </Card>
@@ -129,7 +143,7 @@ const Projects = () => {
                                 component="img"
                                 alt="Contemplative Reptile"
                                 height="200"
-                                image={avatar}
+                                image={Project4}
                                 title="Contemplative Reptile"
                                 />
                                 <CardContent>
@@ -143,11 +157,11 @@ const Projects = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button style={{textDecorations:'none',color:'black'}} size="small" color="primary">
-                                Share
-                                </Button>
-                                <Button style={{textDecorations:'none',color:'black'}} size="small" color="primary">
-                                Learn More
+                            <Button size="small" color="primary">
+                                <a href='https://site-port-a46e48.netlify.app' 
+                                    target='_blank'
+                                    style={{textDecoration:'none',color:'black',fontSize:'20px'}} >
+                                    Live Demo</a>
                                 </Button>
                             </CardActions>
                         </Card>

@@ -1,12 +1,12 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useEffect } from 'react'
-import { Box, Typography } from '@material-ui/core'
+import { Box, Typography, Button } from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
-import avatar from '../Assets/Profile.png';
+import avatar from '../Assets/avatar.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './style.css';
 import './about.css';
-
 const useStyles=makeStyles(theme=>({
     boxcontainer:{
         margin:'10px auto',
@@ -37,8 +37,21 @@ const About = () => {
                 </div>
                 <div data-aos='fade-left'>
                     <Typography variant='h5' style={{color:'white',textAlign:'justify',textJustify:'inter-world'}}>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p>Hey There .. ! I Am Jatin Malhotra , Second Year CSE UnderGrad Student In BM Institute Engg & Tech Affiliated to GGSIPU</p>
+                        <p>I am a Web Developer and Web Designer, who loves to work on projects belonging to Web Development Domain</p>
+                        <p>I am Specialise in These Skills</p>
+                        <ul>
+                            <li>Web Designing with ReactJS Components</li>
+                            <li>Web Development with NodeJS</li>
+                            <li>Web Development Using Django</li>
+                            <li>Javascript/Jquery</li>
+                        </ul>
                     </Typography>
+                    <Button variant="contained" color="primary">
+                        <a href='https://drive.google.com/file/d/1-sB1JgOQkYqS-wBFHlEZUhbl-5gBtRQr/view?usp=sharing' target="_blank" style={{textDecoration:'none'}}>
+                            <Typography variant='h6' style={{float:'left',fontFamily:'Anton',color:'black'}}>Download Resume</Typography> 
+                        </a>
+                    </Button>
                 </div>
             </Box>
         </div>

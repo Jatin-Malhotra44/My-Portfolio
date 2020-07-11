@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React,{useEffect} from 'react'
 import { Box,Typography } from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
@@ -14,9 +15,9 @@ function LinearProgressWithLabel(props) {
           <LinearProgress variant="determinate" {...props} />
         </Box>
         <Box minWidth={35}>
-          <Typography variant="body2" color="textSecondary">{`${Math.round(
+          <Typography variant="h6" color="white">{`${Math.round(
             props.value,
-          )}%`}</Typography>
+          )}`}</Typography>
         </Box>
       </Box>
     );
@@ -66,72 +67,65 @@ const Skills = () => {
                 </div>
                 {/* JavaScript/Jquery */}
                 <Box data-aos='flip-left' style={{margin:'30px'}}>
-                    <Typography variant='h4' style={{margin:'5px',textAlign:'center'}}>Javascript/Jquery</Typography>
+                    <Typography variant='h5' style={{margin:'5px',textAlign:'center'}}>Javascript/Jquery</Typography>
                     <div style={{display:'flex'}}>
                       <div className={classes.root}>
-                          <LinearProgressWithLabel value={90} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
+                          <LinearProgressWithLabel value={80} style={{padding:'10px',height:'5px',borderRadius:'45px/15px',color:'white'}}/>
                       </div>
-                      <Typography variant='h6'>90</Typography>
                     </div>
                 </Box>
                 {/* ReactJs */}
                 <Box data-aos='flip-right' style={{margin:'30px'}}>
-                    <Typography variant='h4' style={{margin:'5px',textAlign:'center'}}>ReactJs</Typography>
+                    <Typography variant='h5' style={{margin:'5px',textAlign:'center'}}>ReactJs</Typography>
                     <div style={{display:'flex'}}>
                       <div className={classes.root}>
-                          <LinearProgressWithLabel value={90} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
+                          <LinearProgressWithLabel value={70} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
                       </div>
-                      <Typography variant='h6'>90</Typography>
                     </div>
                 </Box>
                 {/* NodeJs */}
                 <Box data-aos='flip-left' style={{margin:'30px'}}>
-                    <Typography variant='h4' style={{margin:'5px',textAlign:'center'}}>NodeJs</Typography>
+                    <Typography variant='h5' style={{margin:'5px',textAlign:'center'}}>NodeJs</Typography>
                     <div style={{display:'flex'}}>
                       <div className={classes.root}>
-                          <LinearProgressWithLabel value={90} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
+                          <LinearProgressWithLabel value={70} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
                       </div>
-                      <Typography variant='h6'>90</Typography>
                     </div>
                 </Box>
                 {/* MongoDb/Firebase */}
                 <Box data-aos='flip-left' style={{margin:'30px'}}>
-                    <Typography variant='h4' style={{margin:'5px',textAlign:'center'}}>MongoDb/Firebase</Typography>
+                    <Typography variant='h5' style={{margin:'5px',textAlign:'center'}}>MongoDb/Firebase</Typography>
                     <div style={{display:'flex'}}>
                       <div className={classes.root}>
-                          <LinearProgressWithLabel value={90} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
+                          <LinearProgressWithLabel value={80} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
                       </div>
-                      <Typography variant='h6'>90</Typography>
                     </div>
                 </Box>
                 {/* Python */}
                 <Box data-aos='flip-right' style={{margin:'30px'}}>
-                    <Typography variant='h4' style={{margin:'5px',textAlign:'center'}}>Python</Typography>
+                    <Typography variant='h5' style={{margin:'5px',textAlign:'center'}}>Python</Typography>
                     <div style={{display:'flex'}}>
                       <div className={classes.root}>
                           <LinearProgressWithLabel value={90} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
                       </div>
-                      <Typography variant='h6'>90</Typography>
                     </div>
                 </Box>
                 {/* Django */}
                 <Box data-aos='flip-left' style={{margin:'30px'}}>
-                    <Typography variant='h4' style={{margin:'5px',textAlign:'center'}}>Django</Typography>
+                    <Typography variant='h5' style={{margin:'5px',textAlign:'center'}}>Django</Typography>
                     <div style={{display:'flex'}}>
                       <div className={classes.root}>
-                          <LinearProgressWithLabel value={90} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
+                          <LinearProgressWithLabel value={60} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
                       </div>
-                      <Typography variant='h6'>90</Typography>
                     </div>
                 </Box>
                 {/* R Language */}
                 <Box data-aos='flip-right' style={{margin:'30px'}}>
-                    <Typography variant='h4' style={{margin:'5px',textAlign:'center'}}>R Language</Typography>
+                    <Typography variant='h5' style={{margin:'5px',textAlign:'center'}}>R Language</Typography>
                     <div style={{display:'flex'}}>
                       <div className={classes.root}>
-                          <LinearProgressWithLabel value={90} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
+                          <LinearProgressWithLabel value={70} style={{padding:'10px',height:'5px',borderRadius:'45px/15px'}}/>
                       </div>
-                      <Typography variant='h6'>90</Typography>
                     </div>
                 </Box>
                 

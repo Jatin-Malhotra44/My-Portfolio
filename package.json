@@ -16,6 +16,7 @@
     "react-aos": "^1.0.1",
     "react-background-animation": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-download-link": "^2.3.0",
     "react-particle-backgrounds": "^1.0.2",
     "react-particles-js": "^3.2.1",
     "react-router-dom": "^5.2.0",

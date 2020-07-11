@@ -39,7 +39,15 @@ const useStyles = makeStyles({
         margin:'20px 0',
         letterSpacing:'2px',
         fontStyle:'bolder'
-    }
+    },
+    icon:{
+        fontSize:'30px',
+        color:'tan',
+        "&:hover":{
+            color:'tomato',
+            fontSize:'32px',
+        }
+    },
   });
 
 const Contact = () => {
@@ -78,10 +86,18 @@ const Contact = () => {
                         </Typography>
                     </Box>
                     <div style={{display:'flex',justifyContent:'space-around',margin:'5px 0'}}>
-                        <GitHubIcon style={{fontSize:'30px'}}/>
-                        <LinkedInIcon style={{fontSize:'30px'}}/>
-                        <FacebookIcon style={{fontSize:'30px'}}/>
-                        <InstagramIcon style={{fontSize:'30px'}}/>
+                        <a href='https://www.linkedin.com/in/jatin-malhotra-690292194/'>
+                        <LinkedInIcon className={classes.icon}/>
+                        </a>
+                        <a href='https://www.facebook.com/jatin.malhotra.5473/'>
+                            <FacebookIcon className={classes.icon}/>
+                        </a>
+                        <a href='https://github.com/Jatin-Malhotra44'>
+                        <GitHubIcon className={classes.icon}/>
+                        </a>
+                        <a href='https://www.instagram.com/jatin_malhotra19/'>
+                        <InstagramIcon className={classes.icon}/>
+                        </a>
                     </div>
                 </Box>
                 {/* Email */}

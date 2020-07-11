@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
+// eslint-disable-next-line
+import React from 'react'
 
-import ParticlesBg from 'particles-bg'
-
-class Background extends Component {
-  render () {
+const Background = () => {
     return (
-      <div>
-      <ParticlesBg type="circle" bg={true} />
-      </div>
+        <div>
+            hi
+        </div>
     )
-  }
 }
+
 export default Background

@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './Header';
 import Navbar from './Navbar';
 import {makeStyles} from '@material-ui/core/styles';
-//import Particle from './Particles';
 import FacebookIcon from '@material-ui/icons/Facebook'; 
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -14,7 +13,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import ParticlesBg from 'particles-bg';
-//import Particles from 'react-particles-js';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 const useStyles=makeStyles(theme=>({
     BoxContainer:{
@@ -24,14 +23,13 @@ const useStyles=makeStyles(theme=>({
          transform:'translate(-50%,-50%)'
     },
     icon:{
-        margin:'50px 30px',
-        textAlign:'center',
+        margin:'50px 0px',
         color:'white',
-        fontSize:'50px',
+        fontSize:'40px',
         cursor:'pointer',
         "&:hover":{
             fill:'tomato',
-            fontSize:'55px'
+            fontSize:'45px'
         }
     }
     
@@ -43,10 +41,19 @@ const Home = () => {
             <Navbar/>
             <ParticlesBg type="lines" bg={true} />
             <Header/>         
-            <Box style={{textAlign:'center'}}>
-                <LinkedInIcon className={classes.icon} style={{color:'white'}}/>
-                <FacebookIcon className={classes.icon}/>
+            <Box style={{display:'flex',justifyContent:'space-around'}}>
+                <a href='https://www.linkedin.com/in/jatin-malhotra-690292194/'>
+                    <LinkedInIcon className={classes.icon} style={{color:'white'}}/>
+                </a>
+                <a href='https://www.facebook.com/jatin.malhotra.5473/'>
+                    <FacebookIcon className={classes.icon}/>
+                </a>
+                <a href='https://github.com/Jatin-Malhotra44'>
                 <GitHubIcon className={classes.icon}/>
+                </a>
+                <a href='https://www.instagram.com/jatin_malhotra19/'>
+                <InstagramIcon className={classes.icon}/>
+                </a>
             </Box>
             <About/>
             <Education/>

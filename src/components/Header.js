@@ -19,7 +19,7 @@ subtitle:{
 name:{
     margin:'20px 0',
     letterSpacing:'2px',
-    fontStyle:'bolder'
+    fontFamily:'Anton',
 }    
 }))
 const Header = () => {
